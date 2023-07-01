@@ -9,7 +9,7 @@ function HILL-CLIMBING(problem) # returns the a local maximum
 	current <- problem.INITIAL
 	while true do
 		neighbor <- nextHighest # Look left, look right, choose the higher value
-		if VALUE(neighbor) <= VALUE(current): return current
+		if VALUE(neighbor) <= VALUE(current): return current # reached local peak
 		current <- neighbor
 		
 ```
